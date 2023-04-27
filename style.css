@@ -135,8 +135,7 @@ body {
 	color: var(--clr-neutral-3-solid);
 	background-color: var(--clr-primary-1-solid);
 	font-weight: var(--fw-bold);
-	font-size: calc(var(--fs-regular) * 0.85);
-	letter-spacing: 1px;
+	font-size: var(--fs-regular);
 	outline: none;
 	transition: background-color 0.15s;
 }
