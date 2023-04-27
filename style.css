@@ -38,10 +38,10 @@
 	--fw-bold: 700;
 
 	--fs-regular: 0.875rem;
-	--fs-max: calc(var(--fs-regular) * 2.25);
-	--fs-min: calc(var(--fs-regular) * 0.75);
+	--fs-max: calc(var(--fs-regular) * 2.15);
+	--fs-min: calc(var(--fs-regular) * 0.8);
 
-	--lh-regular: calc(1em + 0.7rem);
+	--lh-regular: calc(1em + 0.6rem);
 
 	/* misc */
 	--outer-spacing: 1.25rem;
@@ -91,16 +91,16 @@ body {
 }
 
 .product__body {
-	padding: 1.75rem;
+	padding: clamp(1.25rem, 5vmin, 2rem);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: 1.5rem;
+	gap: clamp(1.25rem, 5vmin, 1.5rem);
 }
 
 .product__type {
 	text-transform: uppercase;
-	letter-spacing: 6px;
+	letter-spacing: 5px;
 	font-size: var(--fs-min);
 	line-height: 1;
 }
@@ -115,10 +115,15 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 1.25rem;
+	margin-block: 0.25rem;
 }
 
 .product__new-price {
 	color: var(--clr-primary-1-solid);
+}
+
+.product__old-price {
+	font-size: calc(var(--fs-regular) * 0.9);
 }
 
 /* button */
@@ -130,9 +135,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 0.66rem;
-	border-radius: calc(var(--base-border-radius) * 0.8);
+	border-radius: calc(var(--base-border-radius) * 0.75);
 	text-decoration: none;
-	padding: 0.75rem 1.5rem;
+	padding: 0.7rem 1.5rem;
 	color: var(--clr-neutral-3-solid);
 	background-color: var(--clr-primary-1-solid);
 	font-weight: var(--fw-bold);
